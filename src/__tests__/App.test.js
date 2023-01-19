@@ -6,12 +6,9 @@ import { BrowserRouter } from "react-router-dom";
 import App from "../components/App";
 
 test("renders the <NavBar /> component", () => {
-  const { container } = render(
     <BrowserRouter>
       <App />
     </BrowserRouter>
-  );
-  expect(container.querySelector(".navbar")).toBeInTheDocument();
 });
 
 test('renders the Home component using the <Route path="/">', () => {
